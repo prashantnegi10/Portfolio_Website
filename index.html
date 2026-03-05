@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prashant</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Prashant</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">What I Do</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a class="resume-btn" id="downloadResume">Download Resume</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <h1>Hello, I’m Prashant Negi</h1>
+            <p>I create insightful Power BI dashboards, impactful PowerPoint presentations, and clean UI designs using
+                Figma.</p><br><br>
+            <a class="resume-btn" id="viewWork">View Work</a>
+        </div>
+        <div class="hero-photo">
+            <img src="./pic.png">
+        </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="services" id="services">
+        <h2 class="section-title">What I Do</h2>
+        <p style="text-align: center;">I combine data analysis and visual design to build dashboards, reports, and
+            presentations that tell clear stories.</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <div class="service-line"></div>
+                <h3>Dashboard Design</h3>
+                <p>I build interactive Power BI dashboards that transform raw data into actionable insights.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <div class="service-line"></div>
+                <h3>UI / Visual Design</h3>
+                <p>I create modern and intuitive designs in Figma for dashboards, presentations, and digital products.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <div class="service-line"></div>
+                <h3>Excel Automated Reports</h3>
+                <p>I develop automated Excel reporting solutions using formulas, Pivot Tables, and data automation
+                    techniques.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧠</div>
+                <div class="service-line"></div>
+                <h3>Presentation Design</h3>
+                <p>I design professional PowerPoint presentations that communicate ideas clearly and visually.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+        <h2 class="section-title">My Work</h2>
+        <div class="filter">
+            <button class="active" onclick="filter('dashboard', this)">Dashboard</button>
+            <button onclick="filter('design', this)">Design</button>
+            <button onclick="filter('all', this)">All</button>
+        </div>
+        <div class="projects">
+            <!-- Add as many project cards as you like -->
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiYmJmZDc0ZTAtOTI3MS00MWQwLTlkMWUtODFkNjk5NzZkNjQ1IiwidCI6IjBjZjlhNjUxLTZmNWQtNGFiMi1hNTlkLTIzOWZiM2ZiNTE2MiJ9"
+                target="_blank">
+                <div class="project dashboard">
+                    <img src="./Dashboard/Zomato.png">
+
+                    <div class="project-overlay">
+                        <h3>Zomato Dashboard</h3>
+                        <p>Power BI dashboard analyzing Zomato order data, sales performance, and customer ratings to
+                            identify key business trends.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiYjUwZWI1NmEtOTQxMS00YWU0LTkwNDctNmIyNTBjNDE0NmE1IiwidCI6IjBjZjlhNjUxLTZmNWQtNGFiMi1hNTlkLTIzOWZiM2ZiNTE2MiJ9"
+                target="_blank">
+                <div class="project dashboard">
+                    <img src="./Dashboard/Hr.jpg">
+
+                    <div class="project-overlay">
+                        <h3>HR Dashboard</h3>
+                        <p>HR analytics dashboard providing insights into employee distribution, attrition, and overall
+                            workforce performance.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMjhhNDNkNTItMmNhNy00YTk3LTg5YTUtOTk2ZGNjZGRmYmU3IiwidCI6IjBjZjlhNjUxLTZmNWQtNGFiMi1hNTlkLTIzOWZiM2ZiNTE2MiJ9"
+                target="_blank">
+                <div class="project dashboard">
+                    <img src="./Dashboard/Blinkit.png">
+
+                    <div class="project-overlay">
+                        <h3>Blinkit Dashboard</h3>
+                        <p>Sales performance dashboard analyzing outlet types, product categories, and customer ratings
+                            to uncover business insights.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiOWZlMWM0ZDktZDgyMy00YmJjLTk0ZmQtNzA0MDBlNjFmZmVhIiwidCI6IjBjZjlhNjUxLTZmNWQtNGFiMi1hNTlkLTIzOWZiM2ZiNTE2MiJ9"
+                target="_blank">
+                <div class="project dashboard">
+                    <img src="./Dashboard/Watch.jpg">
+
+                    <div class="project-overlay">
+                        <h3>Watch Sales Dashboard</h3>
+                        <p>Interactive dashboard visualizing watch sales performance, revenue trends, and product demand
+                            across different categories.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiM2JiZmYwMTctYjc0Yy00YjgxLWExNTItYjlkMTM1Njg0NmUzIiwidCI6IjBjZjlhNjUxLTZmNWQtNGFiMi1hNTlkLTIzOWZiM2ZiNTE2MiJ9"
+                target="_blank">
+                <div class="project dashboard">
+                    <img src="./Dashboard/Data_Survey.jpg">
+
+                    <div class="project-overlay">
+                        <h3>Data Survey Dashboard</h3>
+                        <p>Data analytics dashboard presenting insights from a survey of data professionals, including
+                            salary trends, tools used, and job roles.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMjljMGZmZGUtZmM4My00NTdjLWI3YzItNTE2MjQyOWI3MWY1IiwidCI6IjBjZjlhNjUxLTZmNWQtNGFiMi1hNTlkLTIzOWZiM2ZiNTE2MiJ9"
+                target="_blank">
+                <div class="project dashboard">
+                    <img src="./Dashboard/Road.jpg">
+
+                    <div class="project-overlay">
+                        <h3>Road Accident Dashboard</h3>
+                        <p>Analytical dashboard exploring road accident data to identify trends in accident severity,
+                            location, and time patterns.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <button id="viewMoreBtn">View More</button>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-wrapper">
+            <div class="contact-left">
+                <p>Have a project or idea? Let's work together.</p>
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="./contact_me.jpg">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 YOUR NAME — All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link JS -->
+
+</body>
+
+</html>
