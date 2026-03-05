@@ -577,7 +577,7 @@ TABLET VIEW
         width: 220px;
         height: 280px;
         position: relative;
-        top: -200px;
+        top: -150px;
 
     }
 
@@ -594,6 +594,7 @@ TABLET VIEW
     .contact-image {
         display: none;
     }
+
 
 
 }
